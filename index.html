@@ -4,13 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shared Files</title>
+    <style>
+        /* Style for the container holding the boxes */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        /* Style for each box */
+        .box {
+            width: 200px;
+            height: 150px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for each box */
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Style for the link inside the box */
+        .box a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Shared Files</h1>
-    <ul>
-        <li><a href="https://drive.google.com/drive/folders/12wecVa6PFWvqR0mpMSZveOv8l_i0LjoP?usp=sharing/">Peter's Folder</a></li>
-        <li><a href="https://drive.google.com/drive/folders/0BwlLinprBzJhaEtYd0F3WUJsNDg?resourcekey=0-02KktWMYG9sw_MXPe6n_Hg&usp=sharing/">Michael's Folder</a></li>
-        <li><a href="https://drive.google.com/drive/folders/0BwlLinprBzJhTEZvRjFEVnc2dGs?resourcekey=0-YV8GSCqyodmHc87lwMC92Q&usp=sharing/">Amany's Folder</a></li>
-    </ul>
+    <h1 style="text-align: center;">Shared Files</h1>
+    <div class="container">
+        <!-- Box for Peter -->
+        <div class="box">
+            <a href="https://drive.google.com/drive/folders/12wecVa6PFWvqR0mpMSZveOv8l_i0LjoP?usp=sharing/">Peter's Folder</a>
+        </div>
+        <!-- Box for Michael -->
+        <div class="box">
+            <a href="https://drive.google.com/drive/folders/0BwlLinprBzJhaEtYd0F3WUJsNDg?resourcekey=0-02KktWMYG9sw_MXPe6n_Hg&usp=sharing/">Michael's Folder</a>
+        </div>
+        <!-- Box for Amany -->
+        <div class="box">
+            <a href="https://drive.google.com/drive/folders/0BwlLinprBzJhTEZvRjFEVnc2dGs?resourcekey=0-YV8GSCqyodmHc87lwMC92Q&usp=sharing/">Amany's Folder</a>
+        </div>
+    </div>
 </body>
 </html>
